@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css?family=Monserrat:300,400,500,700);
+
+body{
+    /* color: #2009405b; */
+    color: #BDC0F2;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #BDC0F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+}
+
+.containerLogo{
+    display: flex;
+    flex-direction: row;
+}
+
+.textLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.textLogo h1{
+    padding: 0;
+    margin: 0;
+    font-size: calc(1em + 1vw);
+}
+.textLogo p {
+    padding: 0;
+    margin: 0;
+    font-size: calc(0.5em + 0.5vw);
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    z-index: 100;
+}
+
+.navLink {
+    display: block;
+    padding: 1rem 2rem;
+    color: #BDC0F2;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+main {
+    padding-top: 140px;
+    margin: 0vw 40vh 0 40vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+
+span{
+    color: #4960A6;
+}
+
+.downloadCV{
+    padding: 10px 20px;
+    background-color: #200940;
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 5px 10px -8px #200940;
+    color: antiquewhite;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+main img {
+    object-fit: cover;
+    border: 7px solid #200940;
+    width: calc(90vw - 45vw);
+    height: calc(90vh - 20vh);
+
+}
+
+.infoContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 5vw;
+}
+
+.infoContent h1{
+    font-size: calc(1em + 1vw);
+    color: #0D0D0D;
+}
+
+.infoContent p{
+    color: #0D0D0D;
+    font-size: calc(0.5em + 0.5vw);
+}
+/* aquí van las media queries para ocultar la imagen */
+@media screen and (max-width: 768px) {
+    main {
+        margin: 20px;
+    }
+    .infoContent {
+        padding-left: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .infoContent h1{
+        font-size: calc(1em + 1vw);
+    }
+    .infoContent p{
+        font-size: calc(0.5em + 0.5vw);
+    }
+    main img{
+        width: calc(50vw - 40px);
+        height: calc(50vh - 40px);
+    }
+}
+
+@media screen and (max-width: 412px){
+    main img{
+        display: none;
+    }
+}
+
+
+footer .final{
+    max-width: 980px;
+    margin: 20px auto 0;
+    padding: 0 4%;
+}
+
+.final .icons{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+}
+
+.final .icons .footer-list li a{
+    margin-right: 25px;
+    color: #200940;
+}
+
+footer .final p a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 85px;
+}
+
+.f-list-item {
+    width: 250px;
+    min-width: 200px;
+    padding-left: 0px;
+    margin: 0px 0px 16px;
+}
+
+.f-list-item a{
+    color: grey;
+    font-size: 13px;
+    margin:0px 0px 16px;
+    text-decoration: none;
+}
+.f-list-item a:hover{
+    text-decoration: underline;
+}
+
+footer input[type="button"] {
+    padding: 6.5px;
+    background-color: transparent;
+    border: 1px solid grey;
+    color:#737373;
+    margin: 0px 0px 20px;
+}
+
+footer input[type="button"]:hover{
+    color: white;
+}
+
+footer .final p{
+    color: grey;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.social--burbble {
+    color: #FFF;
+    cursor: pointer;
+    padding: 5px;
+    width: fit-content;
+    border-radius: 30px;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.5);
+}
+
+.social--burbble:hover {
+    transform: scale(105%);
+}
+
+.rowFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
