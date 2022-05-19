@@ -211,24 +211,38 @@ footer .final p{
 
 
 
-
-
-.social--burbble {
-    color: #FFF;
-    cursor: pointer;
-    padding: 5px;
-    width: fit-content;
-    border-radius: 30px;
-    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.5);
-}
-
-.social--burbble:hover {
-    transform: scale(105%);
-}
-
-.rowFooter {
+.nameProyect {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0px;
+    justify-content: center;
+    text-align: center;
+    color: #5f13c9;
+    font-size: 20vh;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.cardsArray{
+    display: flex;
+    flex-wrap: row;
+    align-items: center;
+}
+
+.buttonCenter{
+    display: flex;
+    flex-wrap: row;
+    align-items: center;
+    justify-content: center;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-muted{
+    text-align: center;
 }
